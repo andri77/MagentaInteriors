@@ -1,5 +1,6 @@
 Feature: A simple magenta search
 
+  @search
   Scenario: As a tester, I want to use Selenium Webdriver method
   Given I use selenium webdriver method
   #Given I am on magenta homepage

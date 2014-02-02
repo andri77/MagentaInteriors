@@ -7,7 +7,7 @@ require 'capybara/cucumber'
 require 'capybara/session'
 #require 'capybara/firebug'
 #require 'features/support/capybara'
-Capybara.default_driver = :selenium
+#Capybara.default_driver = :selenium
 Capybara.run_server = false
 Capybara.default_selector = :css
 Capybara.default_wait_time = 20

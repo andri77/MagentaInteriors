@@ -4,7 +4,7 @@ Feature: Magenta functions
 Background:
   Given I am on magenta homepage
 
-  @debug
+  @categories
 Scenario Outline: Navigating through categories
   When I click "<category>"
 #  And I go into debug mode
