@@ -71,7 +71,7 @@ pass.send_keys "123456"
 
 puts "Flushing database"
 
-#system("ruby", ".\\features\\step_definitions\\mysql")
+system("ruby", ".\\features\\step_definitions\\mysql")
 
 @driver.quit
 
