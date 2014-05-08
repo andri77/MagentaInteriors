@@ -1,0 +1,115 @@
+Testsuite: Google Search
+Tests run: 2, Failures: 0, Errors: 2, Time elapsed: 19.131 sec
+------------- Standard Output ---------------
+Feature: Google Search
+  In order to demonstrate the power of Cucumber and WebDriver combined
+  As a Cucumber instructor
+  I want to walk through a simple google search.
+
+--Output from Show you how to search on google--
+  @wikipedia
+  Scenario: Show you how to search on google # search.feature:7
+    Given I am on the Google search page     # search_steps.groovy:13
+      groovy.lang.MissingPropertyException: No such property: title for class: pages.GoogleHomePage
+      Possible solutions: title
+      	at groovy.lang.MetaClassImpl.invokeStaticMissingProperty(MetaClassImpl.java:897)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1607)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1140)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1583)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1140)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3331)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1152)
+      	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:172)
+      	at groovy.lang.Closure.getPropertyTryThese(Closure.java:325)
+      	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:319)
+      	at groovy.lang.Closure.getProperty(Closure.java:308)
+      	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+      	at pages.GoogleHomePage$__clinit__closure1.doCall(GoogleHomePage.groovy:10)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:606)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1076)
+      	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+      	at groovy.lang.MetaClassImpl.invokeStaticClosureProperty(MetaClassImpl.java:1356)
+      	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1319)
+      	at groovy.lang.ExpandoMetaClass.invokeStaticMethod(ExpandoMetaClass.java:1123)
+      	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:50)
+      	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:108)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+      	at cucumber.steps.search_steps$_run_closure1.doCall(search_steps.groovy:17)
+      	at ✽.Given I am on the Google search page(search.feature:8)
+
+    When I search for "Wikipedia"            # search_steps.groovy:20
+    Then I should see the results page       # search_steps.groovy:27
+    And The first link should be "Wikipedia" # search_steps.groovy:35
+
+--Output from Show you how to search on google--
+  @youtube
+  Scenario: Show you how to search on google # search.feature:14
+    Given I am on the Google search page     # search_steps.groovy:13
+      groovy.lang.MissingPropertyException: No such property: title for class: pages.GoogleHomePage
+      Possible solutions: title
+      	at groovy.lang.MetaClassImpl.invokeStaticMissingProperty(MetaClassImpl.java:897)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1607)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1140)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:1583)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1140)
+      	at groovy.lang.MetaClassImpl.getProperty(MetaClassImpl.java:3331)
+      	at groovy.lang.ExpandoMetaClass.getProperty(ExpandoMetaClass.java:1152)
+      	at org.codehaus.groovy.runtime.InvokerHelper.getProperty(InvokerHelper.java:172)
+      	at groovy.lang.Closure.getPropertyTryThese(Closure.java:325)
+      	at groovy.lang.Closure.getPropertyOwnerFirst(Closure.java:319)
+      	at groovy.lang.Closure.getProperty(Closure.java:308)
+      	at org.codehaus.groovy.runtime.callsite.PogoGetPropertySite.getProperty(PogoGetPropertySite.java:47)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callGroovyObjectGetProperty(AbstractCallSite.java:231)
+      	at pages.GoogleHomePage$__clinit__closure1.doCall(GoogleHomePage.groovy:10)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+      	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+      	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+      	at java.lang.reflect.Method.invoke(Method.java:606)
+      	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:90)
+      	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:233)
+      	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1076)
+      	at groovy.lang.ExpandoMetaClass.invokeMethod(ExpandoMetaClass.java:1110)
+      	at groovy.lang.MetaClassImpl.invokeStaticClosureProperty(MetaClassImpl.java:1356)
+      	at groovy.lang.MetaClassImpl.invokeStaticMethod(MetaClassImpl.java:1319)
+      	at groovy.lang.ExpandoMetaClass.invokeStaticMethod(ExpandoMetaClass.java:1123)
+      	at org.codehaus.groovy.runtime.callsite.StaticMetaClassSite.call(StaticMetaClassSite.java:50)
+      	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:116)
+      	at cucumber.steps.search_steps$_run_closure1.doCall(search_steps.groovy:17)
+      	at ✽.Given I am on the Google search page(search.feature:15)
+
+    When I search for "YouTube"              # search_steps.groovy:20
+    Then I should see the results page       # search_steps.groovy:27
+    And The first link should be "YouTube"   # search_steps.groovy:35
+------------- ---------------- ---------------
+------------- Standard Error -----------------
+
+--Output from Show you how to search on google--
+--Output from Show you how to search on google--------------- ---------------- ---------------
+
+Testcase: Show you how to search on google took 14.856 sec
+	Caused an ERROR
+No such property: title for class: pages.GoogleHomePage
+Possible solutions: title
+groovy.lang.MissingPropertyException: No such property: title for class: pages.GoogleHomePage
+Possible solutions: title
+	at pages.GoogleHomePage$__clinit__closure1.doCall(GoogleHomePage.groovy:10)
+	at cucumber.steps.search_steps$_run_closure1.doCall(search_steps.groovy:17)
+	at ✽.Given I am on the Google search page(search.feature:8)
+
+Testcase: Show you how to search on google took 1.178 sec
+	Caused an ERROR
+No such property: title for class: pages.GoogleHomePage
+Possible solutions: title
+groovy.lang.MissingPropertyException: No such property: title for class: pages.GoogleHomePage
+Possible solutions: title
+	at pages.GoogleHomePage$__clinit__closure1.doCall(GoogleHomePage.groovy:10)
+	at cucumber.steps.search_steps$_run_closure1.doCall(search_steps.groovy:17)
+	at ✽.Given I am on the Google search page(search.feature:15)
+
