@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/magenta.iml" filepath="$PROJECT_DIR$/.idea/magenta.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Browser-Regression.iml" filepath="$PROJECT_DIR$/Browser-Regression.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Browser-Regression-grailsPlugins.iml" filepath="$PROJECT_DIR$/Browser-Regression-grailsPlugins.iml" />
     </modules>
   </component>
 </project>
